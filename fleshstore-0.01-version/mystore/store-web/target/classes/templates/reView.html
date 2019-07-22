@@ -1,0 +1,123 @@
+<!-- <c:set var="ctx" value="${pageContext.request.contextPath}" />
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8"/>
+<meta name="renderer" content="webkit"/>
+<title>hello</title>
+</head>
+
+<body style="margin: 0" onresize="resize()">
+ <div style="width: 300px; height: 200px" th:each="item:${cart}"> 
+     <font th:text="${item.title}"></font>
+     <font th:text="${item.sellPoint}"></font>
+     <font th:text="${item.price}"></font>
+     <font th:text="${item.num}"></font>
+     <img width="100px" height="100px" th:src="${item.image}"/>
+   </div>
+   <button onclick="alert('结算成功')">支付</button>
+</body>
+</html> -->
+<html>
+<head>
+<!-- 引入bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/JcBootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<!-- <link href="fonts/glyphicons-halflings-regular.svg" rel="stylesheet">
+<link href="glyphicons-halflings-regular.eot" rel="stylesheet">
+<link href="glyphicons-halflings-regular.ttf" rel="stylesheet">
+<link href="glyphicons-halflings-regular.woff" rel="stylesheet">
+<link href="glyphicons-halflings-regular.woff2" rel="stylesheet"> -->
+
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/JcBootstrap.js"></script>
+</head>
+<body>
+<div class="nav navbar-default" role="navigation">
+		<div></div>
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target="#example-navbar-collapse">
+				<span class="sr-only"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">江东商城</a>
+		</div>
+		<div class="collapse navbar-collapse" id="example-navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">首页</a></li>
+				<li><a href="#">购物车</a></li>
+				<li><a href="#">卖家中心</a></li>
+				<li><a class="dropdown-toggle" id="dropdownMenu1"
+					data-toggle="dropdown">网站导航 <span class="caret"></span> </a>
+					<ul class="dropdown-menu" role="menu"
+						aria-labelledby="dropdownMenu1">
+						<li role="presentation"><a role="menuitem" tabindex="-1"
+							href="#">导航1</a>
+						</li>
+						<li role="presentation"><a role="menuitem" tabindex="-1"
+							href="#">导航2</a>
+						</li>
+					</ul> <!-- 		<div class="btn-group">
+					<a type="button" class="dropdown-toggle"
+						id="dropdownMenu1" data-toggle="dropdown">更多 <span
+						class="caret"></span> </a>
+					<ul class="dropdown-menu" role="menu"
+						aria-labelledby="dropdownMenu1">
+						<li role="presentation"><a role="menuitem" tabindex="-1"
+							href="#">修改密碼</a></li>
+						<li role="presentation" class="divider"></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1"
+							href="#">退出</a></li>
+					</ul>
+				</div> --></li>
+			</ul>
+					<div class="btn-group" style="float: right;right: 100px">
+							<a class="dropdown-toggle"
+								id="dropdownMenu1" data-toggle="dropdown">用戶 <span
+								class="caret"></span> </a>
+							<ul class="dropdown-menu" role="menu"
+								aria-labelledby="dropdownMenu1">
+								<li role="presentation"><a role="menuitem" tabindex="-1"
+									href="#">修改密碼</a>
+								</li>
+								<li role="presentation" class="divider"></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1"
+									href="#">退出</a>
+								</li>
+							</ul>
+						</div>
+		</div>
+
+	</div>
+<div style="text-align: center; color: red;">购物车</div>
+
+<div class="container" style="margin-top:50px">
+ <div style="width: 300px; height: 200px" th:each="item,itemStat:${cart}"> 
+ <form action="deleteCartItem" method="get">
+   <input type="hidden" name="id" th:value="${item.id}">
+     <input type="hidden" name="index" th:value="${itemStat.index}" >
+     <font th:text="${item.title}"></font>
+     <font th:text="${item.sellPoint}"></font>
+     <font th:text="${item.price}"></font>
+     <font th:text="${item.num}"></font>
+     <img width="100px" height="100px" th:src="${item.image}"/>
+     <div style="margin-left: 200px;margin-top: 100px">
+     <div style=" float:left; width:15px ; border: 1px solid #000"  th:id="'btn-num-'+${item.id}"  class="btn-numReduce" >-</div> 
+     <div style=" width:60px; text-align: center; border:1px solid  #000 ; float: left" th:id="'num-'+${item.id}">1</div>
+     <div style="float:left; width:15px;border: 1px solid #000" th:id="'btn-num-'+${item.id}" class="btn-numIncrease">+</div>
+     <input type="submit" class="btn-danger" value="删除">
+     </div>
+</form>
+     </div>
+   </div>
+</div>
+
+    <button style="margin-left: 500px " class="btn-success" onclick="alert('支付成功');href='reView'">支付</button>
+  
+</body>
+
+
+</html>

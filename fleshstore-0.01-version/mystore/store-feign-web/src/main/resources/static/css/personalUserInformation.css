@@ -1,0 +1,52 @@
+#NavigationBar #a_back_home{
+margin-top: -5px;padding:0 0 0 10px;border-radius:20px;border: 1px solid #ffb2b2;width: 100px
+;color:#ffb2b2;
+}
+#NavigationBar #a_back_home:hover{
+margin-top: -5px;padding:0 0 0 10px;border-radius:20px;width: 100px;
+	background:#FFF;
+;color:#e2231a;
+}
+.logo_img {
+	background:
+		url(//misc.360buyimg.com/user/myjd-2015/widget/common/i/logo_2017.png)
+		no-repeat;
+}
+.menu a,b{
+	display: block;
+	text-decoration: none;
+	color: #000;
+}
+.menu a:hover{
+	color: #e2231a;
+}
+#NavigationBar a{
+	line-height:30px;
+	display: inline-block;
+	vertical-align: top;
+	padding: 22px 0;
+	color: #FFF;
+    text-decoration: none;
+}
+.NavigationBar a:hover{
+text-decoration: none;
+	color: #e2231a;
+}
+
+.NavigationBar a{
+	text-decoration: none;
+	color: #000;
+ 
+}
+#EssentialInformation *{
+	line-height: 30px;
+}
+.hobul li{
+    height: 36px;
+    float: left;
+    padding: 8px 9px;
+    margin: 10px 10px 0 0;
+    cursor: pointer;
+    list-style: none;
+    border: 1px solid #cfcfcf;
+}

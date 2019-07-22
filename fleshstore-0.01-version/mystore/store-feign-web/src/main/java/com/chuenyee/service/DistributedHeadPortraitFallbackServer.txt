@@ -1,0 +1,30 @@
+package com.chuenyee.service;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import com.chuenyee.service.api.Distributed_HeadPortrait;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.RequestParam;
+
+
+
+@Component
+public class DistributedHeadPortraitFallbackServer implements Distributed_HeadPortrait {
+
+    Logger logger = LoggerFactory.getLogger(UserFallbackService.class);
+
+
+    @Override
+    public Map<String, Object> upload(Map<String, Object> request_map) {
+        logger.info("DistributedHeadPortraitServer Fallback!");
+        Map<String, Object> map = new HashMap<String, Object>();
+        Map<String, Object> response_param = new HashMap<String, Object>();
+        response_param.put("error", "系统正在维护中...");
+        map.put("response_param", response_param);
+        map.put("view", "personalUserInformation.html");
+        return map;
+    }
+}

@@ -1,0 +1,312 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>滑块验证</title>
+<link rel="stylesheet"
+	href="webjars/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/bound.css">
+<script src="webjars/jquery/1.11.1/jquery.min.js"></script>
+<script
+	src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="webjars/jquery/1.11.1/jquery.js"></script>
+</head>
+<body>
+	<!-- 	<div id="div_validateBlock"
+		style="width: 380px;height: 230px;">
+		<div style="display: none;" id="div_validate" class="div_3">
+			<div id="div_validateBack">
+				<img id="validateBack" src="" />
+				<div id="img_loadvalidate"
+					style="background: #FFFFDB;width: 370px;height: 190px;position: absolute;">
+					<div style="width: 100px;height: 100px;margin: 0 auto;">
+						<img class="fill_parent" src="img/image.svg">
+					</div>
+					<p style="text-align: center;font-size: 20px;color:#C0C0C0; ">加载图片...</p>
+				</div>
+			</div>
+			<div id="block_area">
+				<div style="width: 280px;height: 150px;">
+					<div id="block" class="div_2">
+						<img id="validateBlock" ondragstart='return false;' src="" />
+					</div>
+				</div>
+				<div style="display: none;position: relative;" class="div_4"
+					id="div_validate_msg">
+					<div
+						style="width: 20px;height: 20px;position: relative;padding-left: 30px;padding-top: 5px">
+						<img id="img_checkValidate" style="position:absolute;left: 0px"
+							class="fill_img" src="store/img/error.svg">
+					</div>
+					<div style="position: absolute;left: 30px;top: 6px">
+						<font id="font_validate_msg" color="#0F0"></font><font
+							id="font_validate_time"></font>
+					</div>
+				</div>
+			</div>
+			<div id="div_refresh" style="width: 20px;height: 20px;" title="刷新验证"
+				onclick="resetValidateBlock()">
+				<img id="img_refresh" class="fill_img" />
+			</div>
+
+		</div>
+		<div
+			style="width: 350px;height: 20px;border:#000 solid 1px;padding-left: 10px;padding-right: 10px;top:230px;position: absolute; "
+			onmouseover="showDivValidateBlock()">
+			<input id="range" type="range" name="test" onmousemove="moveBlock()"
+				onmouseup="checkValidate()" onmousedown="ChangeValidateImg()">
+		</div>
+	</div> -->
+	<div
+		style="width: 350px;height: 20px;padding-left: 10px;padding-right: 10px; position: relative; "
+		onmouseover="showDivValidateBlock()">
+		<input id="range" type="range" name="test" onmousemove="moveBlock()"
+			onmouseup="checkValidate()" onmousedown="ChangeValidateImg()">
+		<div style="display: none;position: absolute;top:-230px;left: 0px " id="div_validate" class="div_3">
+			<div id="div_validateBack">
+				<img id="validateBack" src="" />
+				<div id="img_loadvalidate"
+					style="background: #FFFFDB;width: 370px;height: 190px;">
+					<div style="width: 100px;height: 100px;margin: 0 auto;">
+						<img class="fill_parent" src="img/image.svg">
+					</div>
+					<p style="text-align: center;font-size: 20px;color:#C0C0C0; ">加载图片...</p>
+				</div>
+			</div>
+			<div id="block_area">
+				<div style="width: 280px;height: 150px;">
+					<div id="block" class="div_2" >
+						<img id="validateBlock" ondragstart='return false;' src="" />
+					</div>
+				</div>
+				<div style="display: none;" class="div_4"
+					id="div_validate_msg">
+					<div
+						style="width: 20px;height: 20px;position:relative;padding-left: 30px;padding-top: 5px; display:inline-block;">
+						<img id="img_checkValidate" style="position: absolute;left: 0px"
+							class="fill_img" src="img/error.svg">
+					</div>
+					<div style="left: 30px;top: 6px;display:inline-block">
+						<font id="font_validate_msg" color="#0F0"></font><font
+							id="font_validate_time"></font>
+					</div>
+				</div>
+			</div>
+			<div id="div_refresh" style="width: 20px;height: 20px;" title="刷新验证"
+				onclick="resetValidateBlock()">
+				<img id="img_refresh" class="fill_img" />
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+
+	<br>
+	<br>
+
+</body>
+<script type="text/javascript">
+	//地址 IP port 项目前缀
+	path = "";
+	
+	//用于判断是否完成验证
+	isFinsh = 0;
+	//滑块正确位置
+	var blockX = 0;
+	//滑块花费时间
+	var time = 0.0;
+	//定时器
+	var timer;
+	//定时器=计时悬停滑动条时间
+	var hoverTimer;
+	//滑块所需加载的图片个数
+	var n = 2;
+	//缺块图
+	var backimg = new Image();
+	//滑块
+	var blockimg = new Image();
+	//捆绑滑块
+	$("#block img").replaceWith(blockimg);
+	//原图
+	var oriImage = new Image();
+	//初始化
+	resetValidateBlock();
+	//刷新位置
+	function rangeRefresh() {
+		$("#range").val("0");
+		$("#block").css("margin-left", "0%");
+	}
+	//滑块跟随滑动条移动
+	function moveBlock() {
+		$("#block").css("margin-left", $("#range").val() + "%");
+	}
+
+	//验证
+	function checkValidate() {
+		//滑动偏差值 
+		var offset = 10;
+		//取值 ( 属性值去px )
+		var reg = new RegExp("px", "g");
+		var thePxValue = $("#block").css("margin-left")
+		var theValue = thePxValue.replace(reg, "");
+
+		//停止计时
+		window.clearInterval(timer);
+
+		//比较
+		if (theValue < (parseInt(blockX) + offset)
+				&& theValue > (parseInt(blockX) - offset)) {
+			//验证成功
+			document.getElementById("img_checkValidate").src = path
+					+ "img/success.svg";
+			$("#font_validate_msg").text("验证通过:");
+			$("#font_validate_msg").css("color", "green");
+			time = time.toString().substring(0,
+					time.toString().indexOf(".") + 2);
+			$("#font_validate_time").text("在" + time + "秒内");
+
+			time = 0.0;
+			
+			isFinsh=1;
+
+			resetValidateBlock();
+
+		} else {
+			//验证失败
+			document.getElementById("img_checkValidate").src = path
+					+ "img/error.svg";
+			$("#font_validate_msg").text("验证失败:");
+			$("#font_validate_msg").css("color", "red");
+			$("#font_validate_time").text("拖动滑块将悬浮图像正确拼合.");
+
+			//计时
+			timer = setInterval("clock()", 100);
+			time = 0.0;
+		}
+
+		//显示消息
+		$("#div_validate_msg").fadeIn();
+
+		//淡出消息
+		setTimeout(function() {
+			$("#range").val("0");
+			$("#block").css("margin-left", "0%");
+			$("#div_validate_msg").fadeOut();
+		}, 1000);
+	}
+
+	//重置
+	function resetValidateBlock() {
+
+		//位置重置
+		rangeRefresh();
+
+		//加载中...加锁
+		$("#range").attr("disabled", "disabled");
+		$("#div_refresh").attr("onclick", "");
+
+		//隐藏缺块背景
+		$("#div_validateBack img:first").hide();
+
+		//隐藏滑块
+		$("#block img").hide();
+
+		//淡入加载画面
+		$("#img_loadvalidate").fadeIn();
+
+		//发送初始化图片请求
+		$
+				.ajax({
+					url : path + "aJax_validateImg.do",
+					dataType : 'json',    
+					success : function(reslut) {
+						//返回滑块y位置
+						reslut = reslut - 40;
+
+						//设置滑块y所在位置
+						$("#block").css("top", reslut + "px");
+
+						//加载背景图片
+						backimg.src = path + "getValidateBack.do?date="
+								+ new Date();
+
+						//加载拼块图片
+						blockimg.src = path + "getValidateBlock.do?date="
+								+ new Date();
+
+						//加载原图
+						oriImage.src = path + "getOriImage.do?date="
+								+ new Date();
+
+						oriImage.onload = function() {
+							//显示原图
+							$("#div_validateBack img:first").show();
+							$("#div_validateBack img:first").replaceWith(
+									oriImage);
+
+							//解锁
+							$("#range").removeAttr("disabled");
+							$("#div_refresh").attr("onclick",
+									"resetValidateBlock()");
+
+							//淡出加载页面
+							$("#img_loadvalidate").fadeOut();
+
+							//计时
+							timer = setInterval("clock()", 100);
+						};
+
+						//发送获取滑块左边x位置
+						$.ajax({
+							url : path + "getValidatePositionX.do",
+							success : function(PositionX) {
+								//获取验证正确位置
+								blockX = PositionX;
+							}
+						});
+
+					}
+				});
+
+	}
+	//滑块和背景图错位
+	function ChangeValidateImg() {
+		$("#div_validateBack img:first").replaceWith(backimg);
+		//显示滑块
+		$("#block img").show();
+	}
+	//显示滑块拼图
+	function showDivValidateBlock() {
+		$("#div_validate").fadeIn();
+	}
+
+	//隐藏滑块拼图
+	$("#range").mouseleave(function() {
+		hoverTimer = setTimeout(function() {
+			$("#div_validate").fadeOut();
+		}, 1000);
+	});
+	$("#range").mouseenter(function() {
+		window.clearTimeout(hoverTimer);
+	});
+
+	/* 	//检查是否完成
+	 function checkFinsh() {
+	 if (isFinsh == 1) {
+	 //重新开始
+	 resetValidateBlock();
+	 isFinsh = 0;
+	 }
+	 else{
+	 ChangeValidateImg();
+	 }
+	 } */
+	//定时器
+	function clock() {
+		time = time + 0.1;
+	}
+</script>
+</html>

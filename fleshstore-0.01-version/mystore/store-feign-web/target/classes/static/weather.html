@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS APP天气应用</title>
+<link type="text/css" href="css/weather.css" rel="stylesheet">
+  <script src="webjars/jquery/1.11.1/jquery.js"></script>
+  <script>
+    /*
+    {"resultcode":"200",
+    "reason":"successed!",
+    "result":{"
+    sk":{"temp":"33","wind_direction":"西南风","wind_strength":"2级","humidity":"43%","time":"14:33"},
+    "today":{"temperature":"23℃~35℃","weather":"多云转晴","weather_id":{"fa":"01","fb":"00"},"wind":"南风微风","week":"星期四","city":"北京","date_y":"2019年06月20日","dressing_index":"炎热","dressing_advice":"天气炎热，建议着短衫、短裙、短裤、薄型T恤衫等清凉夏季服装。","uv_index":"中等","comfort_index":"","wash_index":"较适宜","travel_index":"适宜","exercise_index":"适宜","drying_index":""},
+    "future":{"day_20190620":{"temperature":"23℃~35℃","weather":"多云转晴","weather_id":{"fa":"01","fb":"00"},"wind":"南风微风","week":"星期四","date":"20190620"},"day_20190621":{"temperature":"21℃~32℃","weather":"多云","weather_id":{"fa":"01","fb":"01"},"wind":"南风3-5级","week":"星期五","date":"20190621"},"day_20190622":{"temperature":"22℃~33℃","weather":"晴","weather_id":{"fa":"00","fb":"00"},"wind":"南风微风","week":"星期六","date":"20190622"},"day_20190623":{"temperature":"23℃~34℃","weather":"晴转多云","weather_id":{"fa":"00","fb":"01"},"wind":"南风微风","week":"星期日","date":"20190623"},"day_20190624":{"temperature":"22℃~32℃","weather":"多云转阴","weather_id":{"fa":"01","fb":"02"},"wind":"南风微风","week":"星期一","date":"20190624"},"day_20190625":{"temperature":"22℃~33℃","weather":"晴","weather_id":{"fa":"00","fb":"00"},"wind":"南风微风","week":"星期二","date":"20190625"},"day_20190626":{"temperature":"23℃~34℃","weather":"晴转多云","weather_id":{"fa":"00","fb":"01"},"wind":"南风微风","week":"星期三","date":"20190626"}}},"error_code":0}
+     */
+    $(function(){
+      alert(1);
+      var i = 0;
+      var time = ['time-morning active',"time-day","time-evening","time-night"];
+    function getweather(cityname) {
+      $.ajax({
+        type: 'post',
+        url: 'getWeather ',
+        data:{cityname:cityname},
+        success:function (weather) {
+          alert(1);
+
+         var weatherJson = $.parseJSON(weather);
+          console.log(weatherJson);
+          var re = "";
+          re='<div class="weather '+time[i++]+'">'
+          +'<div class="icon">'
+          + weathericon(weather)
+          +'</div>'
+          +'<div class="content">'
+          +'<h3>'+weatherJson.result.today.city+'</h3>'
+          +'<div>'+weatherJson.result.today.temperature+'</div>'
+          +'<div class="data">'
+          +'<h2>'+weatherJson.result.today.weather+'</h2>'
+          +'<div>风向:'+weatherJson.result.sk.wind_direction+weatherJson.result.sk.wind_strength+'</div>'
+          +'<div>湿度:'+weatherJson.result.sk.humidity +'</div>'
+          +'</div>'
+          +'</div>'
+          +'</div>';
+          $("section").append(re);
+        }
+      });
+
+    };
+      getweather("北京");
+      getweather("武汉");
+      getweather("广州");
+      getweather("泉州");
+    function  weathericon(weather) {
+         if(weather.indexOf("晴")!=-1){
+           return '<i class="sun"></i>'
+         }else if(weather.indexOf("多云")!=-1){
+           return '<i class="sun"></i><i class="cloud windy"></i>'
+         }else if(weather.indexOf("雨")!=-1){
+           return '<i class="cloud"></i><i class="sprinkles"></i><i class="sprinkles"></i><i class="sprinkles"></i>'
+         }
+    }
+    })
+  </script>
+</head>
+
+
+<body>
+
+<main>  
+  <div class="device">
+    <header></header>
+    <section>
+
+    </section>
+  </div>
+</main>
+</body>
+</html>

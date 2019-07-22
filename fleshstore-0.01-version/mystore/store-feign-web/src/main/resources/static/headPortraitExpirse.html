@@ -1,0 +1,253 @@
+
+<link rel="stylesheet"
+	href="webjars/bootstrap/3.3.7/css/bootstrap.css">
+<link rel="stylesheet"
+	href="css/style.css">
+<link rel="stylesheet"
+	href="css/bound.css">
+
+<!-- Jcrop -->
+<link rel="stylesheet"
+	href="webjars/Jcrop/0.9.12/css/jquery.Jcrop.css"
+	type="text/css" />
+
+
+<!-- Jcrop -->
+<script src="webjars/jquery/1.11.1/jquery.min.js"></script>
+<script src="webjars/Jcrop/0.9.12/js/jquery.Jcrop.js"></script>
+
+<!-- crop -->
+<!-- <script src="cropper.js"></script>
+<script src="cropper.min.js"></script> -->
+<script src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- <script type="text/javascript" src="webjars/jquery/1.11.1/jquery.js"></script> -->
+<body>
+
+	<div id="div_headPortrait">
+		<div style="width:180px;float: left;">
+			<!-- 选择图片 -->
+			<div class="div_5" id="img_imgAdd"
+				style="width:180px;height:180px; cursor:pointer;float: left;overflow: hidden;margin-left: 100px"
+				onclick="tempClick()">
+				<img alt="添加图片" class="EightyPercent_img"
+					src="img/imgAdd.svg" >
+				<p>选择图片</p>
+			</div>
+			<div>
+				<!-- 隐藏表单 -->
+				<form id="form_uploadHeadPortrait" action="uploadPreviewDiagram.do"
+					enctype="multipart/form-data">
+					<input type="hidden" name="fileType" value="headPortrait">
+					<input type="file" name="file" id="main_img"
+						style="position: absolute; filter: alpha(opacity = 0); opacity: 0; width: 30px;"
+						size="1" onchange="PreviewImg(this)">
+			        <input id="x" name="x" type="hidden" >
+					<input id="y" name="y" type="hidden" >
+					<input id="w" name="w" type="hidden" >
+					<input id="h" name="h" type="hidden" >
+					<input id="previewW" name="previewW" type="hidden" >
+					<input id="previewH" name="previewH" type="hidden" >
+				</form>
+			</div>
+			<!-- 选择图片 -->
+			<div id="reup_headPortrait" style="display: none;cursor: pointer;"
+				onclick="tempClick()">
+				<img style="width: 20px;height: 20px;margin-left: 100px" alt="重新上传"
+					src="img/refresh.svg">重新上传
+			</div>
+		</div>
+		<br /> <br />
+		<div style="width:90px;height:90px;margin-left: 400px;">
+			<!-- 预览图 -->
+			<div
+				style="width:90px;height:90px; cursor:pointer;background:black; overflow: hidden;border-radius:100px;">
+				<img alt="预览图" id="img_preview" class="fill_img"
+					src="img/username.png"> <img
+					id="preview" style="display: none;" src="" alt="[Jcrop Example]">
+			</div>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;预览头像</p>
+		</div>
+        
+        <br /><br />  <br /><br />  <br /><br />
+        <div style="margin-left: 100px">
+               <p>请选择图片上传：大小180 * 180像素支持JPG、PNG等格式，图片需小于2M</p>
+		<button style="margin-left: 150px;width: 200px" class="btn btn-info" onclick="uploadHeadPortrait()">更新</button>
+	    </div>
+		
+	</div>
+</body>
+<script type="text/javascript">
+	//地址 IP port 项目前缀
+	path = "";
+
+	function tempClick() {
+
+		/**
+		 * 火狐浏览器实现点击图片出现文件上传界面
+		 * var a=document.createEvent("MouseEvents"); 
+		 * a.initEvent("click", true, true);  
+		 * document.getElementById("upload_main_img").dispatchEvent(a); 
+		 */
+
+		//IE浏览器实现点击图片出现文件上传界面
+		document.getElementById('main_img').click(); //调用main_img的onclick事件
+	}
+
+
+	/**
+	 * @return {boolean}
+	 */
+	function  PreviewImg(obj) {
+		var selectVar;
+        var imgPath = getPath(obj);
+		if (!obj.value.match(/.jpg|.gif|.png|.bmp/i)) {
+			alert("图片格式错误！");
+
+			return false;
+		}
+
+		//改变选择图片属性以适应加载图片
+		$("#img_imgAdd").removeAttr("onclick");
+		$("#img_imgAdd").css("background", "black");
+		$("#img_imgAdd").attr("id", "select");
+		$("#select p").hide();
+		$("#img_preview").hide();
+		$("#preview").show();
+		$("#reup_headPortrait").show();
+		$("#select img").removeAttr("class");
+		console.log("选择图片更换—————————成功");
+
+		var formData = new FormData($("#form_uploadHeadPortrait")[0]);
+
+		$
+				.ajax({
+					url : path+"uploadPreviewDiagram.do",
+					type : 'post',
+					data : formData,
+					cache : false,
+					processData : false,
+					contentType : false,
+					success : function(reslut) {
+						$("#preview").attr(
+								"src",
+								path+"PreviewHeadPortrait.do?date="
+										+ new Date());
+						console.log("加载预览图片_______成功");
+
+						var img = new Image();
+						//加载图片
+						img.src = path+"PreviewHeadPortrait.do?date="
+								+ new Date();
+
+						img.onload = function() {
+							$("#select").html(img);
+
+							if ($("#select img").width() > $("#select img")
+									.height()) {
+								$("#select img").css("width", "100%");
+								$("#select img").css(
+										"height",
+										180 * $("#select img").height()
+										/ $("#select img").width()
+										+ "px");
+								$("#select").css(
+										"padding-top",
+										180
+										* (1 - $("#select img")
+												.height()
+										/ $("#select img")
+												.width()) / 2
+										+ "px");
+								$("#select").css("padding-left", 0);
+								selectVar = 180 * $("#select img").height()
+										/ $("#select img").width();
+							} else {
+								$("#select img").css("height", "100%");
+								$("#select img").css(
+										"width",
+										180 * $("#select img").width()
+										/ $("#select img").height()
+										+ "px");
+								$("#select").css(
+										"padding-left",
+										180
+										* (1 - $("#select img").width()
+										/ $("#select img")
+												.height()) / 2
+										+ "px");
+								$("#select").css("padding-top", 0);
+								selectVar = 180 * $("#select img").width()
+										/ $("#select img").height();
+							}
+							console.log("选择图片居中_______成功");
+							$("#previewW").val($("#select img").width());
+							$("#previewH").val($("#select img").height());
+							$("#select img").Jcrop({
+								aspectRatio : 1,
+								setSelect : [ 0, 0, selectVar, selectVar ],
+								onSelect : updatePreview,
+								onChange : updatePreview
+							});
+							console.log("开始截图_______成功");
+						};
+
+					}
+				});
+
+		function updatePreview(c) {
+		    $("#x").val(c.x);
+		    $("#y").val(c.y);
+		    $("#w").val(c.w);
+		    $("#h").val(c.h);
+			if (parseInt(c.w) > 0) {
+				var rx = 90 / c.w;
+				var ry = 90 / c.h;
+				api =
+					jQuery("#preview").css({
+					width : Math.round(rx * $("#select img").width()) + 'px',
+					height : Math.round(ry * $("#select img").height()) + 'px',
+					marginLeft : '-' + Math.round(rx * c.x) + 'px',
+					marginTop : '-' + Math.round(ry * c.y) + 'px'
+				});
+			}
+		}
+
+
+	}
+
+	function getPath(obj) {
+		if (obj) {
+			if (navigator.userAgent.indexOf("MSIE") > 0) {
+				obj.select();
+				//IE下取得图片的本地路径   
+				return document.selection.createRange().text;
+			} else if ((isFirefox = navigator.userAgent.indexOf("Firefox")) > 0) {
+				if (obj.files) { // Firefox下取得的是图片的数据   
+					return files.item(0).getAsDataURL();
+				}
+				return obj.value;
+			}
+			return obj.value;
+		}
+	}
+
+	//上传头像
+	function uploadHeadPortrait() {
+		var formData = new FormData(document.getElementById("form_uploadHeadPortrait"));
+	/* 	var formData = new FormData($("#form_uploadHeadPortrait")); */
+		$
+				.ajax({
+					url : path+"uploadHeadPortrait.do",
+					type : 'post',
+					data : formData,
+					cache : false,
+					processData : false,
+					contentType : false,
+					success : function(reslut) {
+						alert(reslut);
+						window.location.href=path+"headPortrait.html";
+					}
+				});
+	}
+</script>
+

@@ -1,0 +1,177 @@
+.body-gray {
+	background: #f5f5f5;
+}
+
+.bg_change_red {
+	background-color: white;
+	transition: background-color 0.5s;
+}
+
+.bg_change_red:hover {
+	background-color: red;
+}
+
+.bg_change_red:hover .font_change_white {
+	font-size: 5px;
+	color: white;
+}
+
+.font_change_white {
+	font-size: 5px;
+	color: red;
+}
+
+.Jc_bottom {
+	margin: 0 auto;
+	clear: both;
+	width: 750px;
+	height: 110px;
+	margin-top: 30px;
+	margin-top: 60px
+}
+
+.Jc_container {
+	position: relative;
+	height: 950px;
+	width: 100%;
+	min-width: 1102px;
+	overflow: hidden;
+}
+
+.Jc_container .Jc_bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	background-size: cover;
+	-webkit-transition: background 1s;
+	-moz-transition: background 1s;
+	-o-transition: background 1s;
+	transition: background 1s;
+}
+
+.Jc_content {
+	display: table;
+	margin: 0 auto;
+	clear: both;
+	width: 1102px;
+	height: 80%;
+	position: relative;
+	overflow: hidden;
+}
+
+.Jc_footer {
+	font-size: 12px;
+	text-align: center;
+	border-top: solid 1px #e6e6e6;
+	color: #999;
+	padding-bottom: 30px;
+	border-top: solid 1px #e6e6e6;
+}
+
+.Jc_header {
+	min-width: 1002px;
+	height: 10%;
+	overflow: hidden;
+	zoom: 1;
+	/* 	border-bottom: 1px solid #d6dfea;
+	background: #eff4fa;  */
+}
+
+.Jc_header2 {
+	height: 110px;
+	background: url(//misc.360buyimg.com/user/reg/3.0.0/css/i/headbg.jpg)
+		repeat-x left bottom;
+}
+
+.Jc_clearfix {
+	margin: 0 auto;
+	width: 1210px;
+}
+
+.Jc_item {
+	
+}
+
+.Jc_log {
+	height: 100%;
+	border-radius: 3px;
+	width: 352px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.carousel-inner img {
+	min-width: 1920px;
+	width: 100%;
+}
+
+.frame-all {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	min-width: 1103px;
+}
+
+.layoutHeader {
+	top: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 62px;
+	z-index: 41;
+	position: absolute;
+	background: #eff4f8;
+}
+
+.xtJbHcb {
+	width: 100%;
+	height: 40px;
+	min-width: 1050px;
+	font-size: 12px;
+	margin-top: -20px;
+	position: absolute;
+	z-index: 999;
+	top: 50%;
+	left: 0;
+	font-family: microsoft yahei, tahoma, arial;
+}
+
+.app-user-info {
+	height: 100%;
+	float: right;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	margin-right: 15px;
+	height: 30px;
+	background-color: #999;
+	-webkit-border-radius: 15px;
+	border: 2px solid #fff;
+}
+
+.user-photo-box {
+	display: inline-block;
+	vertical-align: middle;
+	width: 34px;
+	height: 34px;
+	background: rgba(0, 0, 0, .1);
+	background-position: center center;
+	border-radius: 50%;
+}
+
+.user-photo {
+	height: 30px;
+}
+.news_list{
+	list-style: none;
+	padding-left: 0px;
+}
+.news_list li {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space:nowrap;
+}

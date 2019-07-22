@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+.bg-color-pink {
+	background-color: #e9005e;
+}
+
+.bg-color-gray {
+	background-color: #e3e4e5;
+}
+
+.bg-color-white {
+	background: #FFF;
+}
+
+.bg-img-spriteHead1 {
+	background-image: url(../img/sprite.head.png);
+	height: 170px;
+	width: 190px;
+}
+
+.bg-color-gray .row div {
+	
+}
+.font_belowDiv {
+	position: absolute;
+	top: 20px;
+	left: -7px;
+	width: 40px;
+}
+.img-fix-right-top {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 93px;
+	height: 165px;
+	background: url(../img/12.12GO.png) no-repeat;
+}
+.service_pop td{
+	vertical-align:top;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.service_pop span{
+	height: 50px
+}
+.NavigationBar a {
+	text-decoration: none;
+	color: #000;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.NavigationBar a:nth-of-type(1) {
+	margin-left: 100px;
+}

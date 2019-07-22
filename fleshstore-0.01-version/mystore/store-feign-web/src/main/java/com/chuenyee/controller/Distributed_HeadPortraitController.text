@@ -1,0 +1,45 @@
+package com.chuenyee.controller;
+import com.chuenyee.service.api.Distributed_HeadPortrait;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.util.Map;
+
+@RestController
+public class Distributed_HeadPortraitController {
+    Logger logger = LoggerFactory.getLogger(Distributed_HeadPortraitController.class);
+
+    @Autowired
+    Distributed_HeadPortrait distributed_HeadPortrait;
+
+    @RequestMapping(value="/Dis_uploadHeadPortrait.do")
+    public  Map<String, Object>  uploadHeadPortrait(@RequestParam Map<String,Object> request_map, Map<String,Object> map)  {
+        // return restTemplate.getForObject("", responseType)
+        logger.info("web Distributed_HeadPortraitController=====================uploadHeadPortrait");
+        logger.debug("request_map："+request_map);
+
+        /*
+         * 请求服务
+         */
+        Map<String, Object> response_map = distributed_HeadPortrait.upload(request_map);
+
+
+        /*
+         * 响应信息
+         */
+      //  return	(String) response_map.get("view");
+        if(response_map.get("response_param")!=null){
+            //信息返回
+            map.putAll((Map<String, Object>) response_map.get("response_param"));
+        }
+        logger.debug("map："+map);
+        return	map;
+    }
+
+
+
+}

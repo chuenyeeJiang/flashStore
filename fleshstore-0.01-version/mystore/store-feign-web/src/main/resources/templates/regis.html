@@ -1,0 +1,66 @@
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+<meta name="renderer" content="webkit" />
+<title>登陆页面</title>
+<!-- css -->
+<!-- 引入bootstrap -->
+<link rel="stylesheet" href="webjars/bootstrap/3.3.7/css/bootstrap.css"/>
+<link rel="stylesheet" href="webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="css/JcBootstrap.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+
+<!-- js -->
+<script src="webjars/jquery/1.11.1/jquery.js"></script>
+<script src="webjars/bootstrap/3.3.7/js/bootstrap.js"></script>
+<script src="js/function.js"></script>
+<script src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- 标题图标 -->
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+</head>
+<body style="margin: 0" onResize="resize()">
+
+	<div class="Jc_header2" style="text-shadow:black 1px 1px 1px;">
+    <div class="Jc_clearfix">
+		<h1 style="color: #F00;margin-left: 10px; float:left">江东</h1><h3 style="float:left; color:#FFF; padding-top:10px">欢迎注册</h3></div>
+	</div>
+    
+    
+    <div class="Jc_content" style="height:500px">
+    	<form action="Regis.do" class="form-autoFocus" method="post" onsubmit="return regisCl()">
+        <div style=" margin: 50px auto 186px;
+    width: 400px">
+		<div class="form-group">
+			<!--suppress ALL-->
+         <div th:text="${regis_error}" id="regis_font_msg" style="color:red"></div><br />
+		 <input type="text" name="regisUsername" class="form-control input-remenberUsername input-autoFocus"
+		  id="regisUsername" placeholder="用户名" focus-index="0"/> <br />
+          <input type="password" name="regisPassword" class="form-control input-remenberUsername input-autoFocus"
+		  id="regisPassword" placeholder="密码" focus-index="1"/> <br />
+           <input type="password"  class="form-control input-remenberUsername input-autoFocus"
+		  id="confirmPassword" placeholder="确认密码" focus-index="2"/> <br />
+          <input type="button" class="btn btn-danger input-autoFocus  input-submit" focus-index="3"  style="width:400px" value="下一步" onclick="submitformautoFocus()">
+         </div>
+        </div>
+        </form>
+    </div>
+    
+    <div class="Jc_footer">
+    	<ol class="breadcrumb" style=" background:#FFF;">
+		 <li>关于我</li>
+		 <li>服务协议</li>
+		 <li>权利声明</li>
+		 <li>版本更新</li>
+		 <li>帮助中心</li>
+		 <li>版权投诉</li>
+        </ol>
+    </div>
+    
+</body>
+</html>
+<script type="text/javascript">
+autoFocus();
+</script>
+	

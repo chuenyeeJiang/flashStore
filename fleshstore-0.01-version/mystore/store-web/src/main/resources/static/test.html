@@ -1,0 +1,35 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8"/>
+<meta name="renderer" content="webkit"/>
+<title>登陆页面</title>
+<!-- css -->
+<!-- 引入bootstrap -->
+<link rel="stylesheet" href="css/bootstrap.css"></link>
+<link rel="stylesheet" href="css/bootstrap.min.css"></link>
+<link rel="stylesheet" href="css/JcBootstrap.css"></link>
+<link rel="stylesheet" href="css/style.css"></link>
+
+<!-- js -->
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/JcBootstrap.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!-- 标题图标 -->
+<link rel="icon" href="http://localhost:8082/store/favicon.ico" mce_href="http://localhost:8082/store/favicon.ico" type="image/x-icon">
+</link>
+</head>
+
+<body style="margin: 0" onresize="resize()">
+   <!-- 滑块验证码区 -->
+   <div id="SliderVerificationCodeArea" style="width: 100%;height: 100%"></div>
+</body>
+</html>
+<script type="text/javascript">
+//滑块验证码 
+load_home();
+ function load_home() {
+ document.getElementById("SliderVerificationCodeArea").innerHTML = "<object type='text/html' data='validateBlock.html' width='100%' height='100%'></object>";
+ }
+</script>

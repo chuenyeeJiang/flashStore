@@ -1,0 +1,16 @@
+server:
+  port: 9519
+  context-path: /
+
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:9000/eureka
+
+spring:
+  application:
+    name: store-FastDFSServer

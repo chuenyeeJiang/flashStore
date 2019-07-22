@@ -1,0 +1,421 @@
+﻿﻿@charset "utf-8";
+/* CSS Document */
+.img{
+	width:100%;
+	height:100%;
+}
+.hidden{
+	display:none;
+}
+ul{
+	margin-left:50px;
+}
+ul li{
+	left:100px;
+	line-height:50px;
+}
+
+.LogForm{
+	position:relative;
+	border:#09F solid 1px;
+	box-shadow:#00C 3px 3px 3px;
+	float:left;
+	margin-left:32%;
+	margin-top:15%;
+	width:500px;
+	height:400px;
+	border-radius:3px;
+	
+    background: -webkit-linear-gradient(rgba(255,255,255,0),rgba(100,100,150,0.4)); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(rgba(255,255,255,0),rgba(100,100,150,0.4)); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(rgba(255,255,255,0),rgba(100,100,150,0.4)); /* Firefox 3.6 - 15 */
+    background: linear-gradient(rgba(255,255,255,0),rgba(100,100,150,0.4)); /* 标准的语法 */
+    
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);	/* Safari 和 Chrome */
+    -moz-transform: rotateY(0deg);
+    transition:1s;
+}
+.Log_input_username{
+	float:left;
+	background:rgba(0,0,102,1);
+	border:0px;
+	border-radius:10px;
+	font-size:18px;
+	height:40px;
+	color:#FFF;
+	width:250px;
+	margin-left:10px;
+	outline:none;
+}
+.Log_imgdiv_username
+{
+	float:left;
+	width:35px;
+	height:35px;
+	border-right:#FFF solid 1px;
+}
+.Log_div_username{
+	border:#09C solid 1px;
+	border-style:inset;
+	position:absolute;
+	float:left;
+	left:100px;
+	background:rgba(0,0,102,1);
+	border-radius:10px;
+	width:300px;
+	height:40px;
+	padding:5px;
+}
+.Log_div_username:hover{
+	border:#FFF solid 1px;
+	border-style:inset;
+	position:absolute;
+	float:left;
+	left:100px;
+	background:rgba(0,0,102,1);
+	border-radius:10px;
+	width:300px;
+	height:40px;
+	padding:5px;
+}
+.Log_input_password{
+	float:left;
+	background:rgba(0,0,102,1);
+	border:0px;
+	border-radius:10px;
+	font-size:18px;
+	height:40px;
+	color:#FFF;
+	width:250px;
+	margin-left:10px;
+	outline:none;
+}
+.Log_div_password{
+	border:#09C solid 1px;
+	border-style:inset;
+	position:absolute;
+	float:left;
+	left:100px;
+	background:rgba(0,0,102,1);
+	border-radius:10px;
+	width:300px;
+	height:40px;
+	padding:5px;
+	top:150px;
+}
+.Log_div_password:hover{
+	border:#FFF solid 1px;
+	border-style:inset;
+	position:absolute;
+	float:left;
+	left:100px;
+	background:rgba(0,0,102,1);
+	border-radius:10px;
+	width:300px;
+	height:40px;
+	padding:5px;
+	top:150px;
+}
+.log_div_img_validatecode{
+	position:absolute;
+	left:250px;
+	top:230px;
+	width:91px;
+	height:28px;
+}
+.regis_div_img_validatecode{
+	position:absolute;
+	left:230px;
+	top:155px;
+	width:99px;
+	height:28px;
+}
+.Log_input_validatecode{
+	float:left;
+	background:rgba(0,0,102,1);
+	border:0px;
+/* 	border-radius:10px; */
+	font-size:2px;
+	height:15px;
+	color:#FFF;
+	width:50px;
+	margin-left:5px;
+	outline:none;
+}
+
+.Log_div_validatecode{
+	border:#09C solid 1px;
+	border-style:inset;
+	position:absolute;
+	float:left;
+	left:175px;
+	background:rgba(0,0,102,1);
+/* 	border-radius:10px; */
+	width:50px;
+	height:15px;
+	padding:5px;
+	top:230px;
+}
+.regis_div_validatecode{
+	border:#09C solid 1px;
+	border-style:inset;
+	position:absolute;
+	float:left;
+	left:155px;
+	background:rgba(0,0,102,1);
+/* 	border-radius:10px; */
+	width:50px;
+	height:15px;
+	padding:5px;
+	top:155px;
+}
+.Log_div_validatecode:hover{
+	border:#FFF solid 1px;
+	border-style:inset;
+	position:absolute;
+	float:left;
+	left:175px;
+	background:rgba(0,0,102,1);
+/* 	border-radius:10px; */
+	width:50px;
+	height:15px;
+	padding:5px;
+	top:230px;
+}
+.regis_div_validatecode:hover{
+	border:#FFF solid 1px;
+	border-style:inset;
+	position:absolute;
+	float:left;
+	left:155px;
+	background:rgba(0,0,102,1);
+/* 	border-radius:10px; */
+	width:50px;
+	height:15px;
+	padding:5px;
+	top:155px;
+}
+.log_h3_validatecode{
+	position:absolute;
+	left:100px;
+	top:215px;
+}
+.regis_font_validatecode{
+	position:absolute;
+	left:90px;
+	top:140px;
+	font-size: 18px;
+}
+.log_a_change_validatecode{
+	position:absolute;
+	left:350px;
+	top:235px;
+}
+.regis_a_change_validatecode{
+	position:absolute;
+	left:350px;
+	top:142px;
+}
+.Log_imgdiv_password
+{
+	float:left;
+	width:35px;
+	height:35px;
+	border-right:#FFF solid 1px;
+}
+.Log_div_log{
+	border:rgba(255,100,0,0.8) outset 1px;
+	position:absolute;
+	padding-left:30px;
+	font-size:30px;
+	color:#FFF;
+	float:left;
+	left:100px;
+	background:rgba(255,100,0,0.8);
+	width:90px;
+	height:40px;
+	top:330px;
+}
+.Log_div_log:hover{
+	border:rgba(255,100,0,1) outset 1px;
+    position:absolute;
+	padding-left:30px;
+	font-size:30px;
+	color:#FFF;
+	float:left;
+	left:100px;
+	background:rgba(255,100,0,1);
+	width:90px;
+	height:40px;
+	top:330px;
+
+}
+.Log_div_log:active{
+	border:rgba(235,80,0,1) inset 1px;
+    position:absolute;
+	padding-left:30px;
+	font-size:30px;
+	color:#FFF;
+	float:left;
+	left:100px;
+	background:rgba(235,80,0,1);
+	width:90px;
+	height:40px;
+	top:330px;
+}
+.Log_div_regis{
+	border:rgba(100,255,100,0.8) outset 1px;
+	position:absolute;
+	padding-left:30px;
+	font-size:30px;
+	color:#FFF;
+	left:290px;
+	background:rgba(100,255,100,0.8);
+	width:90px;
+	height:40px;
+	top:330px;
+}
+.Log_div_regis:hover{
+	border:rgba(100,255,100,1) outset 1px;
+	position:absolute;
+	padding-left:30px;
+	font-size:30px;
+	color:#FFF;
+	float:left;
+	left:290px;
+	background:rgba(100,255,100,1);
+	width:90px;
+	height:40px;
+	top:330px;
+}
+.Log_div_regis:active{
+	border:rgba(80,235,80,1) inset 1px;
+	position:absolute;
+	padding-left:30px;
+	font-size:30px;
+	color:#FFF;
+	float:left;
+	left:290px;
+	background:rgba(80,235,80,1);
+	width:90px;
+	height:40px;
+	top:330px;
+}
+.Log_div_msg{
+	position:absolute;
+	font-size:15px;
+	color:#F00;
+    top:205px;
+    left:150px;
+}
+.FunctionBox{
+  	position:absolute;
+	left:100px;
+	top:285px;
+}
+.RegisForm{
+	position:relative;
+	border:#09F solid 1px;
+	box-shadow:#00C 3px 3px 3px;
+	float:left;
+	margin-left:32%;
+	margin-top:12%;
+	width:500px;
+	height:350px;
+	
+    background: -webkit-linear-gradient(rgba(255,255,255,0.4),rgba(25,0,150,0.4))); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(rgba(255,255,255,0.4),rgba(25,0,150,0.4)); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(rgba(255,255,255,0.4),rgba(25,0,150,0.4)); /* Firefox 3.6 - 15 */
+    background: linear-gradient(rgba(255,255,255,0.4),rgba(25,0,150,0.4)); /* 标准的语法 */
+	
+	transform: rotateY(90deg);
+    -webkit-transform: rotateY(90deg);	/* Safari 和 Chrome */
+    -moz-transform: rotateY(90deg);
+	transition:1s;
+}
+.RegisForm_div_back{
+	position: absolute;
+	width: 20px;
+	height: 80px;
+    top: 120px;
+    left:-1px;
+    border-right:#06C solid 1px;
+   
+    border-radius:10px;
+}
+.RegisForm_div_back:hover{
+	position: absolute;
+	width: 20px;
+	height: 80px;
+    top: 120px;
+    left:-1px;
+    border-right:#06C solid 1px;
+    border-radius:10px;
+    background: rgba(255,255,255,0.1);
+}
+.RegisForm_div_back:active{
+	position: absolute;
+	width: 20px;
+	height: 80px;
+    top: 120px;
+    left:-1px;
+    border-right:#06C solid 1px;
+    border-radius:10px;
+    background: rgba(0,0,0,0.1);
+}
+.Regis_div{
+	border-radius:10px;
+	width:400px;
+	height:40px;
+}
+.Regis_input{
+	padding-left:10px;
+	background:rgba(0,0,102,1);
+	border:#09F inset 1px;
+	border-radius:10px;
+	font-size:18px;
+	height:30px;
+	color:#FFF;
+	width:250px;
+	left:10px;
+}
+.Regis_div_submit{
+	position:absolute;
+	padding-left:30px;
+	font-size:30px;
+	margin-left:200px;
+	color:#FFF;
+	background:rgba(255,100,0,0.8);
+	width:90px;
+	height:40px;
+	top:290px;
+	border:rgba(255,100,0,0.8) outset 1px;
+	border-radius:10px;
+}
+.Regis_div_submit:hover{
+	position:absolute;
+	padding-left:30px;
+	font-size:30px;
+	margin-left:200px;
+	color:#FFF;
+	background:rgba(255,100,0,1);
+	width:90px;
+	height:40px;
+	top:290px;
+	border:rgba(255,100,0,1) outset 1px;
+		border-radius:10px;
+}
+.Regis_div_submit:active{
+	border:rgba(235,80,0,1) inset 1px;
+	border-radius:10px;
+	position:absolute;
+	padding-left:30px;
+	font-size:30px;
+	margin-left:200px;
+	color:#FFF;
+	background:rgba(230,80,0,1);
+	width:90px;
+	height:40px;
+	top:290px;
+}

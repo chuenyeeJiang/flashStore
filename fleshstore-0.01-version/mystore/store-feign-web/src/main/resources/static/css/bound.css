@@ -1,0 +1,113 @@
+#block {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 50px;
+	height: 50px;
+}
+
+#block_area {
+	position: relative;
+	width: 300px;
+	height: 200px;
+}
+
+#div_log2{
+	height: 90%;
+    border-radius: 3px;
+    width: 352px;
+    display: table-cell;
+    vertical-align: middle;
+}
+#div_log2Back{
+	position: absolute;
+    width: 100%;
+    height: 90%;
+    left: 0;
+    background-size: cover;
+}
+
+#div_refresh:hover {
+	position: absolute;
+	top: 202px;
+	background-image: url("../img/refresh_down.svg");
+	background-size: 100%;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/refresh_down.svg',
+		sizingMethod=scale );
+}
+
+#div_refresh {
+	position: absolute;
+	top: 202px;
+	background-image: url("../img/refresh.svg");
+	background-size: 100%;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/refresh.svg',
+		sizingMethod=scale );
+}
+
+#div_validate {
+	position: relative;
+	/* width-���ڱ߾�+�߿���)  height-���ڱ߾�+�߿���) Ϊ��ͼƬ��С */
+	width: 400px;
+	height: 230px;
+	padding: 17px;
+}
+
+#div_validateBack {
+	position: absolute;
+	/* ID������ʽ */
+	border: #A3D0FE inset 2px;
+	height: 184px;
+	width: 364px;
+	overflow: hidden;
+}
+
+#div_validate_msg {
+	width: 360px;
+	height: 30px;
+	margin-left: 2px;
+	margin-top: 2px;
+}
+
+#img_refresh:hover {
+	
+}
+
+#validateBack {
+	position: absolute;
+}
+
+#validateBlock { /* ID������ʽ  */
+	position: absolute;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+}
+
+#img_imgAdd {
+	padding: 50px;
+}
+
+#img_imgAdd:hover {
+	background-color: rgb(150, 150, 150);
+}
+#preview_img {
+  display: block;
+  position: absolute;
+  z-index: 2000;
+  top: 10px;
+  right: -280px;
+  padding: 6px;
+  border: 1px rgba(0,0,0,.4) solid;
+  background-color: white;
+
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+
+  -webkit-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+}

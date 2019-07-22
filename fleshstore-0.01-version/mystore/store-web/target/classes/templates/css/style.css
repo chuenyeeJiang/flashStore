@@ -1,0 +1,46 @@
+
+.div_1{
+ /* 	border:#09F outset 10px;   */
+}
+.div_2{
+}
+.div_3{
+	position:absolute;
+	background-color:#A3D0FE;
+    border:#A3D0FE outset 2px; 
+    border-radius:10px;
+}
+.div_4{
+    background-color: rgba(255,255,255,0.8);
+}
+.div_5{
+	background-color: rgb(200,200,200);
+}
+.fill_img{
+	width: 100%;
+	height: 100%;
+}
+.fill_parent{
+	width: 100%;
+	height: 100%;
+}
+
+.half_img{
+	width: 50%;
+	height: 50%;
+}
+.EightyPercent_img{
+	width: 80%;
+	height: 80%;
+}
+.OneThird_img{
+	width: 30%;
+	height: 30%;
+}
+.ddleft dd{
+	float:left;
+	color:#000;
+}
+.ddleft dt{
+	float:left;
+}

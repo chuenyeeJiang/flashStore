@@ -1,0 +1,66 @@
+
+<html>
+<head>
+<title>操作成功提示</title>
+<script>
+setTimeout(function(){window.location.href="tbsearch"},3000);
+</script>
+<style>
+.MessageBox{
+	position:relative;
+	margin:80px auto;
+	width:800px;
+	height:500px;
+	background:#F1FFC9;
+}
+.div_img_success{
+	position:absolute;
+	left:100px;
+	top:100px;
+	width:100px;
+	height:100px;
+}
+.fullimg{
+	width:100%;
+	height:100%;
+}
+.font_message{
+	position:absolute;
+	left:300px;
+	top:150px;
+	color:#0F0;
+	font-size:32px;
+	font-stretch:wider;
+	text-shadow:#000 1px 1px 2px;
+}
+.font_gotoshow{
+	position:absolute;
+	left:300px;
+	top:290px;
+	color:#CCC;
+	font-size:25px;
+}
+.font_gotonowshow{
+	position:absolute;
+	left:300px;
+	top:320px;
+	font-size:25px;
+}
+.font_gotonow{
+	color:#6F0;
+}
+
+</style>
+
+</head>
+
+<div  class="MessageBox">
+<div class="div_img_success"><img class="fullimg" src="img/success.svg"/></div>
+<font class="font_message">操作成功！</font>
+<font class="font_gotoshow">页面自动跳转中...</font>
+<font class="font_gotonowshow">点击<a href="index" class="font_gotonow">这里</a>立即跳转</font>
+</div>
+
+<body>
+</body>
+</html>

@@ -1,0 +1,235 @@
+﻿<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>智能机器人</title>
+	<link rel="stylesheet" type="text/css" href="mytuling_css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="mytuling_css/default.css">
+	<link rel="stylesheet" type="text/css" href="mytuling_css/styles.css">
+
+</head>
+
+<body>
+<button id="start" onclick="start(this)">开始录音</button>
+<button id="stop"  onclick="stop(this)" disabled>停止录音</button>
+<div id="chatbox">
+	<!-- 好友列表 -->
+	<div id="friendslist">
+		<!-- 顶级菜单 -->
+		<div id="topmenu">
+			<span class="friends"></span>
+			<span class="chats"></span>
+			<span class="history"></span>
+		</div>
+		<!-- 好友列表 -->
+		<div id="friends">
+			<div class="friend">
+				<img src="img/1_copy.jpg" />
+				<p>
+					<strong>智能机器人</strong> <span>wuyuehong@neusoft.com</span>
+				</p>
+				<div class="status available"></div>
+			</div>
+		</div>
+	</div>
+	<!-- 聊天窗口 -->
+	<div id="chatview" class="p1">
+		<div id="profile">
+			<div id="close">
+				<div class="cy"></div>
+				<div class="cx"></div>
+			</div>
+			<p>波罗揭谛</p>
+			<span>boluojiedi@neusoft.com</span>
+		</div>
+		<div id="chat-messages">
+			<main>
+				<label><script>document.write(new Date().getDay())</script></label>
+			</main>
+		</div>
+
+		<div id="sendmessage">
+			<input type="text" id="sendMessages" placeholder="Send message..." />
+			<button id="send">发送</button>
+		</div>
+
+	</div>
+</div>
+
+
+<script src="webjars/jquery/1.11.1/jquery.js"></script>
+<script>
+	var audio_context;
+	var recorder;
+
+	function startUserMedia(stream) {
+		var input = audio_context.createMediaStreamSource(stream);
+
+		input.connect(audio_context.destination);
+
+		recorder = new Recorder(input);
+	}
+
+	function start(button){
+		recorder && recorder.record();
+		button.disabled = true;
+		button.nextElementSibling.disabled =false;
+	}
+
+	function stop(button){
+		recorder && recorder.stop();
+		button.disabled = true;
+		button.previousElementSibling.disabled =false;
+
+		recorder && recorder.exportWAV(function(blob){
+			var formData = new FormData();
+			formData.set('file',blob);//blob即为要发送的数据
+
+			$.ajax({url:"tuling_stt.do",
+					type: "POST",
+				    cache : false,
+				    processData : false,
+				    contentType : false,
+		        	data:formData,
+					success:function(result){
+			          var jsonResult =  $.parseJSON(result)
+						alert(jsonResult.result);
+					}
+
+			 });
+
+
+		});
+		recorder.clear();
+
+
+
+	}
+
+	$(document).ready(function () {
+		var preloadbg = document.createElement('img');
+		preloadbg.src = 'img/timeline1.png';
+		$('#searchfield').focus(function () {
+			if ($(this).val() == 'Search contacts...') {
+				$(this).val('');
+			}
+		});
+		$('#searchfield').focusout(function () {
+			if ($(this).val() == '') {
+				$(this).val('Search contacts...');
+			}
+		});
+		$('#sendmessage input').focus(function () {
+			if ($(this).val() == 'Send message...') {
+				$(this).val('');
+			}
+		});
+		$('#sendmessage input').focusout(function () {
+			if ($(this).val() == '') {
+				$(this).val('Send message...');
+			}
+		});
+		$('.friend').each(function () {
+			$(this).click(function () {
+				var childOffset = $(this).offset();
+				var parentOffset = $(this).parent().parent().offset();
+				var childTop = childOffset.top - parentOffset.top;
+				var clone = $(this).find('img').eq(0).clone();
+				var top = childTop + 12 + 'px';
+				$(clone).css({ 'top': top }).addClass('floatingImg').appendTo('#chatbox');
+				setTimeout(function () {
+					$('#profile p').addClass('animate');
+					$('#profile').addClass('animate');
+				}, 100);
+				setTimeout(function () {
+					$('#chat-messages').addClass('animate');
+					$('.cx, .cy').addClass('s1');
+					setTimeout(function () {
+						$('.cx, .cy').addClass('s2');
+					}, 100);
+					setTimeout(function () {
+						$('.cx, .cy').addClass('s3');
+					}, 200);
+				}, 150);
+				$('.floatingImg').animate({
+					'width': '68px',
+					'left': '108px',
+					'top': '20px'
+				}, 200);
+				var name = $(this).find('p strong').html();
+				var email = $(this).find('p span').html();
+				$('#profile p').html(name);
+				$('#profile span').html(email);
+				$('.message').not('.right').find('img').attr('src', $(clone).attr('src'));
+				$('#friendslist').fadeOut();
+				$('#chatview').fadeIn();
+				$('#close').unbind('click').click(function () {
+					$('#chat-messages, #profile, #profile p').removeClass('animate');
+					$('.cx, .cy').removeClass('s1 s2 s3');
+					$('.floatingImg').animate({
+						'width': '40px',
+						'top': top,
+						'left': '12px'
+					}, 200, function () {
+						$('.floatingImg').remove();
+					});
+					setTimeout(function () {
+						$('#chatview').fadeOut();
+						$('#friendslist').fadeIn();
+					}, 50);
+				});
+			});
+		});
+	});
+
+
+	//发送
+	$("#send").click(function () {
+		var message = $("#sendMessages").val();
+		$.ajax({
+			type : "post",
+			url : "tuling_getResult.do",
+			data : "message=" + message,
+			beforeSend: function(){
+				$("#sendMessages").val("");
+				$("main").append('<div class="message right"><img src="img/2_copy.jpg" /><div class="bubble">'
+						+ message + '<div class="corner"></div><span>'
+						+ new Date().getHours() +  ":" + new Date().getMinutes() +  ":" + new Date().getSeconds()
+						+ '</span></div></div>');
+			},
+			success : function(result) {
+				$("main").append('<div class="message"><img src="img/1_copy.jpg" /><div class="bubble">'
+						+ result + '<div class="corner"></div><span>'
+						+ new Date().getHours() +  ":" + new Date().getMinutes() +  ":" + new Date().getSeconds()
+						+ '</span></div></div>');
+				//滚动条
+				$("#chat-messages").scrollTop($("main").height());
+				var audio= new Audio("voice/output.wav?date="+new Date());//这里的路径写上mp3文件在项目中的绝对路径
+				audio.load();
+				audio.play();
+			}
+		});
+	});
+
+	//开麦
+	window.onload = function init() {
+		try {
+			// webkit shim
+			window.AudioContext = window.AudioContext || window.webkitAudioContext;
+			navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia;
+			window.URL = window.URL || window.webkitURL;
+			audio_context = new AudioContext;
+
+		} catch (e) {
+			alert('No web audio support in this browser!');
+		}
+
+		navigator.getUserMedia({audio: true}, startUserMedia, function(e) {
+			console.log('No live audio input: ' + e);
+		});
+	};
+</script>
+<script src="webjars/recorderjs/0.0.0/recorder.js"></script>
+</body>
+</html>

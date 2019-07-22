@@ -1,0 +1,1141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="FastDFS:war" />
+      <artifact name="FastDFS:war exploded" />
+      <artifact name="storefastDFS:war" />
+      <artifact name="storefastDFS:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutomaticModuleUnloader">
+    <loaded-modules>
+      <module name="mystore" />
+      <module name="MyTuLing" />
+      <module name="store-feign-web" />
+      <module name="FISCOBCOS" />
+      <module name="store-nginx" />
+      <module name="store-eureka" />
+      <module name="store-server100" />
+      <module name="store-ssoServer" />
+      <module name="store-server102" />
+      <module name="store-security" />
+      <module name="store-userServer" />
+      <module name="store-web" />
+      <module name="store-fastDFS" />
+    </loaded-modules>
+  </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/../gestureRecognition003/src/main/java/com/chuenyee/mapper/GesturesMapper.java" description="@Flush" line="9" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="de49fcda-361a-427f-876c-17800afb188d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store-feign-web/src/main/resources/static/js/function.js" beforeDir="false" afterPath="$PROJECT_DIR$/store-feign-web/src/main/resources/static/js/function.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store-feign-web/src/main/resources/static/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/store-feign-web/src/main/resources/static/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store-fileServer/src/main/java/com/chuenyee/service/FileServerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/store-fileServer/src/main/java/com/chuenyee/service/FileServerImpl.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/store-web/target/" />
+    <ignored path="$PROJECT_DIR$/store-server102/target/" />
+    <ignored path="$PROJECT_DIR$/store-feign-web/target/" />
+    <ignored path="$PROJECT_DIR$/store-ssoServer/target/" />
+    <ignored path="$PROJECT_DIR$/store-eureka/target/" />
+    <ignored path="$PROJECT_DIR$/store-userServer/target/" />
+    <ignored path="$PROJECT_DIR$/store-server100/target/" />
+    <ignored path="$PROJECT_DIR$/store-security/target/" />
+    <ignored path="$PROJECT_DIR$/store-nginx/target/" />
+    <ignored path="$PROJECT_DIR$/FastDFS/target/" />
+    <ignored path="$PROJECT_DIR$/store-fastDFS/target/" />
+    <ignored path="$PROJECT_DIR$/FISCO-BCOS/target/" />
+    <ignored path="$PROJECT_DIR$/MyTuLing/target/" />
+    <ignored path="$PROJECT_DIR$/store-fastDFS(error)/target/" />
+    <ignored path="$PROJECT_DIR$/store-fileServer/target/" />
+    <ignored path="$PROJECT_DIR$/weathers/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/store-fileServer/src/main/java/com/chuenyee/tool/MyJsonHandle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="23" column="24" selection-end-line="148" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/store-fileServer/src/main/java/com/chuenyee/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/store-fileServer/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="17" column="43" selection-end-line="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/store-fileServer/src/main/resources/FastDFS.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/store-fileServer/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="22" column="16" selection-end-line="120" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/resources/static/js/function.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="407" column="11" selection-start-line="407" selection-start-column="11" selection-end-line="407" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/store-eureka/src/main/java/com/chuenyee/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/java/com/chuenyee/WebApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/store-userServer/src/main/java/com/chuenyee/WebApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="12" column="26" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/resources/static/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>h3</find>
+      <find>返回</find>
+      <find>updatePreview</find>
+      <find>#select img</find>
+      <find>#select</find>
+      <find>select</find>
+      <find>img_imgAdd</find>
+      <find>更新</find>
+      <find>&gt;h3</find>
+      <find>getPath</find>
+      <find>getusernameByRedis</find>
+      <find>HI</find>
+      <find>myba</find>
+      <find>mybatic</find>
+      <find>闪购</find>
+      <find>main_img</find>
+      <find>preview</find>
+      <find>img</find>
+      <find>PreviewImg</find>
+      <find>Dis_uploadHeadPortrait</find>
+      <find>sk</find>
+      <find>uploadHeadPortrait</find>
+      <find>form_uploadHeadPortrait</find>
+      <find>base</find>
+      <find>base64Encode</find>
+      <find>port</find>
+      <find>store</find>
+      <find>json</find>
+      <find>host</find>
+      <find>Preview</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>&lt;/div&gt;&lt;/div&gt;</replace>
+      <replace>&lt;/div&gt;</replace>
+      <replace>&lt;/div&gt;&lt;/span&gt;</replace>
+      <replace>class=&quot;font</replace>
+      <replace>font</replace>
+      <replace>$(selectImg)</replace>
+      <replace>$(&quot;#select img&quot;);</replace>
+      <replace>$(&quot;#select img&quot;)</replace>
+      <replace>$(&quot;#select&quot;)</replace>
+      <replace>$(&quot;#img_imgAdd&quot;)</replace>
+      <replace>div</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/weathers/src/main/java/com/neusoft/WebApplication.java" />
+        <option value="$PROJECT_DIR$/weathers/src/main/resources/static/weather.html" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/main/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/store-web/src/main/java/com/chuenyee/service/WeatherUntil.java" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/main/java/neusoft/weathertet/Test.java" />
+        <option value="$PROJECT_DIR$/weathers/pom.xml" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/main/java/neusoft/Servlet/WeatherServlet.java" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/main/resources/static/css/weather.css" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/main/java/com/chuenyee/service/WeatherUntil.java" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/main/java/com/chuenyee/controller/AJax_ValidateBlockRangeController.java" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/main/resources/static/weather.html" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/main/resources/static/mytuling_css/styles.css" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/main/java/baidu/speech/restapi/common/ConnUtil.java" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/main/java/com/chuenyee/controller/TuLingUntil.java" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/main/java/com/chuenyee/service/TuLingUntil.java" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/main/java/baidu/speech/restapi/ttsdemo/AI.java" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/main/java/baidu/speech/restapi/ttsdemo/AI2.java" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/main/java/baidu/speech/restapi/ttsdemo/AI3.java" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/test/java/com/chuenyee/controller/TTS.java" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/main/java/com/chuenyee/controller/WeatherController.java" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/main/java/baidu/speech/restapi/ttsdemo/TTS.java" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/main/resources/static/tuling.html" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/main/java/com/chuenyee/controller/TuLingController.java" />
+        <option value="$PROJECT_DIR$/store-feign-web/target/classes/static/tuling.html" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/main/java/com/chuenyee/service/api/Distributed_HeadPortrait.java" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/main/java/com/chuenyee/service/DistributedHeadPortraitFallbackServer.java" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/main/resources/static/personalUserInformation.html" />
+        <option value="$PROJECT_DIR$/store-feign-web/target/classes/static/headPortrait.html" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/main/resources/static/headPortrait.html" />
+        <option value="$PROJECT_DIR$/store-fileServer/src/main/java/com/chuenyee/Application.java" />
+        <option value="$PROJECT_DIR$/store-fileServer/src/main/java/com/chuenyee/service/FileServer.java" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/main/java/baidu/speech/restapi/sttdemo/STT.java" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/main/java/com/chuenyee/tool/MyJsonHandle.java" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/test/java/com/chuenyee/controller/test.java" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/main/java/com/chuenyee/service/HttpBuffer.java" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/main/java/com/chuenyee/tool/MyHttphandle.java" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/main/java/com/chuenyee/service/HeadPortraitFallbackServer.java" />
+        <option value="$PROJECT_DIR$/store-feign-web/pom.xml" />
+        <option value="$PROJECT_DIR$/store-fileServer/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/main/java/com/chuenyee/service/api/HeadPortrait.java" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/main/java/com/chuenyee/controller/HeadPortraitController.java" />
+        <option value="$PROJECT_DIR$/store-fileServer/src/test/java/com/chuenyee/controller/test.java" />
+        <option value="$PROJECT_DIR$/store-fileServer/src/main/java/com/chuenyee/service/api/FileServer.java" />
+        <option value="$PROJECT_DIR$/store-fileServer/src/main/java/com/chuenyee/tool/MyJsonHandle.java" />
+        <option value="$PROJECT_DIR$/store-fileServer/src/main/java/com/chuenyee/tool/MyHttphandle.java" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/main/java/com/chuenyee/service/HeadPortraitImpl.txt" />
+        <option value="$PROJECT_DIR$/store-fileServer/src/main/java/com/chuenyee/controller/HeadPortraitController.java" />
+        <option value="$PROJECT_DIR$/store-fileServer/src/main/java/com/chuenyee/service/FileServerImpl.java" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/main/resources/static/test.html" />
+        <option value="$PROJECT_DIR$/store-feign-web/src/main/resources/static/js/function.js" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/coreResource/jar/apache-maven-3.2.5" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="createModuleGroups" value="true" />
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="store-fileServer" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="store-fileServer" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="300" />
+    <option name="y" value="91" />
+    <option name="width" value="1180" />
+    <option name="height" value="885" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="mystore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mystore" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563802257006" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.39086688" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\后台\mystore\store-feign-web\src\main\resources\static\js" />
+      <recent name="C:\Users\Administrator\Desktop\后台\mystore\store-fileServer\src\main\java\com\chuenyee" />
+      <recent name="C:\Users\Administrator\Desktop\后台\mystore\store-feign-web\target\classes\com\chuenyee\controller" />
+      <recent name="C:\Users\Administrator\Desktop\后台\mystore\store-feign-web\target\classes\static" />
+      <recent name="C:\Users\Administrator\Desktop\后台\mystore\store-feign-web\src\main\resources\static" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.chuenyee.service.api" />
+      <recent name="com.chuenyee.controller" />
+      <recent name="com.chuenyee.service" />
+      <recent name="com.neusoft" />
+      <recent name="com.chuenyee" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\后台\mystore\weathers\src\main\resources\static" />
+      <recent name="C:\Users\Administrator\Desktop\后台\mystore\store-fastDFS\src\test" />
+      <recent name="C:\Users\Administrator\Desktop\后台\mystore\store-feign-web\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.WebApplication (1)">
+    <configuration name="test.getBase64" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="store-fileServer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chuenyee.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.chuenyee.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.chuenyee.controller.test" />
+      <option name="METHOD_NAME" value="getBase64" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="store-eureka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chuenyee.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.chuenyee.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="store-fileServer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chuenyee.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.chuenyee.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="store-server102" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.chuenyee.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="store-userServer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chuenyee.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.chuenyee.WebApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="store-feign-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chuenyee.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.chuenyee.WebApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="store-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.chuenyee.WebApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.WebApplication (1)" />
+        <item itemvalue="Spring Boot.WebApplication (2)" />
+        <item itemvalue="Spring Boot.Application (1)" />
+        <item itemvalue="Spring Boot.Application (2)" />
+        <item itemvalue="JUnit.test.getBase64" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpringBeansView">
+    <option name="showImplicitBeans" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="de49fcda-361a-427f-876c-17800afb188d" name="Default Changelist" comment="" />
+      <created>1555639418078</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1555639418078</updated>
+      <workItem from="1555639420395" duration="2334000" />
+      <workItem from="1555643500798" duration="2752000" />
+      <workItem from="1555648447854" duration="2436000" />
+      <workItem from="1555651117368" duration="437000" />
+      <workItem from="1555671454226" duration="6266000" />
+      <workItem from="1555683096170" duration="14502000" />
+      <workItem from="1555816523404" duration="19776000" />
+      <workItem from="1555860393718" duration="458000" />
+      <workItem from="1555893251031" duration="4617000" />
+      <workItem from="1555981083213" duration="4261000" />
+      <workItem from="1556090221974" duration="3301000" />
+      <workItem from="1556290428346" duration="745000" />
+      <workItem from="1556344983209" duration="5080000" />
+      <workItem from="1556413157543" duration="93000" />
+      <workItem from="1556505182455" duration="1015000" />
+      <workItem from="1556948604703" duration="605000" />
+      <workItem from="1557575288778" duration="5352000" />
+      <workItem from="1557621426196" duration="43000" />
+      <workItem from="1557661257092" duration="6311000" />
+      <workItem from="1557707680612" duration="13201000" />
+      <workItem from="1557742297713" duration="581000" />
+      <workItem from="1557743401660" duration="14652000" />
+      <workItem from="1557904111893" duration="5135000" />
+      <workItem from="1557975891825" duration="2991000" />
+      <workItem from="1558068880224" duration="581000" />
+      <workItem from="1558198497121" duration="2379000" />
+      <workItem from="1559437156684" duration="2891000" />
+      <workItem from="1559607925702" duration="7208000" />
+      <workItem from="1560422252963" duration="3438000" />
+      <workItem from="1560475273419" duration="12346000" />
+      <workItem from="1560504956498" duration="12137000" />
+      <workItem from="1560565187230" duration="9831000" />
+      <workItem from="1560589752886" duration="1472000" />
+      <workItem from="1560687901479" duration="1698000" />
+      <workItem from="1560693427551" duration="5407000" />
+      <workItem from="1560733962831" duration="8946000" />
+      <workItem from="1560761933057" duration="14427000" />
+      <workItem from="1560819062577" duration="3145000" />
+      <workItem from="1560827332977" duration="4016000" />
+      <workItem from="1560839053454" duration="649000" />
+      <workItem from="1560839905098" duration="3110000" />
+      <workItem from="1560845230176" duration="1237000" />
+      <workItem from="1560847397967" duration="1221000" />
+      <workItem from="1560848844285" duration="14792000" />
+      <workItem from="1560870924276" duration="591000" />
+      <workItem from="1560957688005" duration="430000" />
+      <workItem from="1560958893367" duration="410000" />
+      <workItem from="1560990863734" duration="40982000" />
+      <workItem from="1561077247340" duration="42923000" />
+      <workItem from="1561169841650" duration="5206000" />
+      <workItem from="1561278550227" duration="583000" />
+      <workItem from="1561528959117" duration="13707000" />
+      <workItem from="1561563647740" duration="590000" />
+      <workItem from="1561600137218" duration="10230000" />
+      <workItem from="1561615700332" duration="1841000" />
+      <workItem from="1561617812767" duration="22584000" />
+      <workItem from="1561681735208" duration="40328000" />
+      <workItem from="1561768510450" duration="9261000" />
+      <workItem from="1561786266419" duration="1218000" />
+      <workItem from="1561787746265" duration="575000" />
+      <workItem from="1561789715559" duration="9851000" />
+      <workItem from="1562074654324" duration="6945000" />
+      <workItem from="1562113245363" duration="8164000" />
+      <workItem from="1562136742143" duration="330000" />
+      <workItem from="1563369246506" duration="5939000" />
+      <workItem from="1563679344914" duration="2992000" />
+      <workItem from="1563712429820" duration="3916000" />
+      <workItem from="1563800479966" duration="1783000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="test_getBase64 - 2019.06.29 at 13h 04m 12s.xml">
+      <configuration name="test.getBase64" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_getBase64 - 2019.06.29 at 13h 07m 41s.xml">
+      <configuration name="test.getBase64" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_getBase64 - 2019.06.29 at 13h 08m 05s.xml">
+      <configuration name="test.getBase64" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_getBase64 - 2019.06.29 at 13h 11m 43s.xml">
+      <configuration name="test.getBase64" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_getBase64 - 2019.06.29 at 13h 12m 08s.xml">
+      <configuration name="test.getBase64" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_getBase64 - 2019.06.29 at 13h 12m 37s.xml">
+      <configuration name="test.getBase64" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_getBase64 - 2019.06.29 at 13h 15m 17s.xml">
+      <configuration name="test.getBase64" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_getBase64 - 2019.06.29 at 13h 22m 50s.xml">
+      <configuration name="test.getBase64" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_getBase64 - 2019.06.29 at 15h 33m 26s.xml">
+      <configuration name="test.getBase64" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_getBase64 - 2019.06.29 at 15h 41m 36s.xml">
+      <configuration name="test.getBase64" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="459455000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="7" />
+    <layout>
+      <window_info active="true" content_ui="combo" x="21" y="112" width="284" height="745" id="Project" order="0" sideWeight="0.49811321" visible="true" weight="0.20136054" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" sideWeight="0.5018868" side_tool="true" weight="0.13820079" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4952381" weight="0.31714284" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8469388" visible="true" weight="0.58739257" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993481" weight="0.39895698" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" x="506" y="91" width="523" height="682" id="TODO" order="6" type="WINDOWED" weight="0.32885906" />
+      <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.4979592" weight="0.30857143" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.15306123" side_tool="true" visible="true" weight="0.58739257" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49115646" weight="0.56" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.48095238" weight="0.46285716" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" sideWeight="0.49863946" weight="0.32857144" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Problems" order="15" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24965987" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.08367347" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" visible="true" weight="0.11564626" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.4.1.RELEASE/spring-boot-1.4.1.RELEASE-sources.jar!/org/springframework/boot/SpringApplication.java</url>
+          <line>307</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.4.1.RELEASE/spring-boot-1.4.1.RELEASE-sources.jar!/org/springframework/boot/env/YamlPropertySourceLoader.java</url>
+          <line>85</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.7.RELEASE/spring-beans-5.1.7.RELEASE.jar!/org/springframework/beans/factory/config/YamlProcessor.class</url>
+          <line>61</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.4.1.RELEASE/spring-boot-1.4.1.RELEASE-sources.jar!/org/springframework/boot/env/YamlPropertySourceLoader.java</url>
+          <line>100</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/java/com/chuenyee/service/UserFallbackService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="23" column="4" lean-forward="true" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/java/com/chuenyee/service/ValidateBlockRangeImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="39" lean-forward="true" selection-end-line="397" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/java/com/chuenyee/service/ValidatecodeImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="38" lean-forward="true" selection-end-line="214" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/java/com/chuenyee/service/WeatherUntil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="30" column="32" lean-forward="true" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/java/com/chuenyee/tool/MyHttphandle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="28" column="17" selection-end-line="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/java/com/chuenyee/tool/MyJsonHandle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1676">
+          <caret line="24" column="36" selection-end-line="149" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/resources/static/css/bound.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="23" lean-forward="true" selection-end-line="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/resources/static/css/css.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="15" lean-forward="true" selection-end-line="405" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/resources/static/css/css-02.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="18" lean-forward="true" selection-end-line="161" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/resources/static/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="1" lean-forward="true" selection-end-line="54" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/resources/static/css/JcBootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-494">
+          <caret line="13" column="31" lean-forward="true" selection-end-line="172" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/resources/static/css/jquery.Jcrop.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/resources/static/css/personalUserInformation.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="19" lean-forward="true" selection-end-line="51" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/resources/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="10" lean-forward="true" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/resources/static/css/success.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="16" lean-forward="true" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/resources/static/css/weather.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="15" lean-forward="true" selection-end-line="471" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/resources/static/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/resources/static/js/test.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/resources/static/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/resources/static/headPortrait.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="26" column="19" lean-forward="true" selection-end-line="223" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/resources/static/headPortraitExpirse.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="30" selection-end-line="253" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/resources/static/personalUserInformation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="28" selection-end-line="193" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/resources/static/recorderWorker.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/resources/static/tuling.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="14" lean-forward="true" selection-end-line="235" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/resources/static/uploadItem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="7" lean-forward="true" selection-end-line="81" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/resources/static/validateBlock.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="37" lean-forward="true" selection-end-line="312" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/resources/static/weather.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="15" lean-forward="true" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="7" selection-end-line="324" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" lean-forward="true" selection-end-line="166" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/resources/templates/regis.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="13" lean-forward="true" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/resources/templates/success.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="32" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="16" lean-forward="true" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/resources/FastDFS.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="31" lean-forward="true" selection-end-line="292" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-fileServer/src/main/java/com/chuenyee/controller/HeadPortraitController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="41" column="65" lean-forward="true" selection-start-line="41" selection-start-column="65" selection-end-line="41" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-fileServer/src/main/java/com/chuenyee/model/FileSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="20" lean-forward="true" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-fileServer/src/main/java/com/chuenyee/service/FileServerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1824">
+          <caret line="103" column="9" selection-end-line="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-fileServer/src/main/java/com/chuenyee/service/api/FastDFSServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-fileServer/src/main/java/com/chuenyee/service/api/FileServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-fileServer/src/main/java/com/chuenyee/service/FastDFS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="24" column="22" selection-end-line="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-fileServer/src/main/java/com/chuenyee/tool/MyHttphandle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="25" column="17" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-fileServer/src/main/java/com/chuenyee/tool/MyJsonHandle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="23" column="24" selection-end-line="148" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-fileServer/src/main/java/com/chuenyee/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-fileServer/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="43" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-fileServer/src/main/resources/FastDFS.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-fileServer/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="16" selection-end-line="120" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/resources/static/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/resources/static/js/function.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="407" column="11" selection-start-line="407" selection-start-column="11" selection-end-line="407" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-eureka/src/main/java/com/chuenyee/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-feign-web/src/main/java/com/chuenyee/WebApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store-userServer/src/main/java/com/chuenyee/WebApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>storefastDFS:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.39086688" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.39086688" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.39086688" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.39086688" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>store-feign-web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.39086688" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.39086688" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

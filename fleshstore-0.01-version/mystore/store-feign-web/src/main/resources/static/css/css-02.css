@@ -1,0 +1,162 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.img {
+	width: 100%;
+	height: 100%;
+}
+
+.titleDiv {
+	position: relative;
+	width: 1565px;
+	height: 200px;
+	border: #333 outset 3px;
+	/* 	background:#0075D5; */
+	box-shadow: #CCC 3px 3px 3px;
+
+}
+
+.UserBar {
+	margin:0;
+	padding:0;
+	position: fixed;
+	color: #FFF;
+	font-size: 16px;
+	right: 0;
+	text-shadow: black 2px 2px 1px;
+	width:100%;
+	background: -webkit-linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)); /* Firefox 3.6 - 15 */
+    background: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)); /* 标准的语法 */
+}
+.UserBar >div{
+float: right;
+margin-right: 100px;
+}
+
+.back {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.Logo {
+	width: 300px;
+	height: 250px;
+	position: absolute;
+	left: 0;
+	top: -30px;
+	float: left;
+	color: #FFF;
+}
+
+.tiltle {
+	position: absolute;
+	float: left;
+	padding-left: 230px;
+	padding-top: 50px;
+	color: #FFF;
+	font-size: 36px;
+	font-family: monospace;
+	text-shadow: black 2px 2px 1px;
+}
+
+.address {
+	position: absolute;
+	float: left;
+	padding-left: 240px;
+	padding-top: 100px;
+	color: #FFF;
+	font-size: 28px;
+	text-shadow: black 1px 1px 1px
+}
+
+.MenuLogo { /* 	position:absolute; */
+	height: 30px;
+	width: 30px;
+	float: left;
+	margin-top: -5px;
+}
+
+.MenuName {
+	height: 30px;
+	padding: 4px;
+	margin-left: -40px;
+	background: #000;
+	color: #FFF;
+}
+
+.MenuName:hover {
+	height: 30px;
+	padding: 4px;
+	margin-left: -40px;
+	background: #666;
+	color: #FFF;
+}
+
+.Menu li {
+	line-height: 30px;
+	background: #FFF;
+	padding-left: 20px;
+	color: #000;
+	text-decoration: none;
+}
+
+.Menu li:hover {
+	line-height: 30px;
+	background: #FFF;
+	padding-left: 20px;
+	font-size: 18px;
+	color: #000;
+	text-decoration: none;
+}
+
+.MenuDiv {
+	float: left;
+	position: relative;
+	width: 300px;
+	height: 800px;
+	border: #333 solid 1px;
+	box-shadow: #CCC 3px 3px 3px;
+}
+
+.Context {
+	position: relative;
+	width: 1255px;
+	height: 790px;
+	border: #333 solid 1px;
+	-webkit-margin-top: 10px;
+	-webkit-margin-left: 0px;
+	-o-top: 10px;
+	-o-left: 310px;
+	-moz-top: 10px;
+	-moz-left: 310px;
+	top: 10px;
+	left: 310px;
+	box-shadow: #CCC 3px 3px 3px;
+	border-radius: 10px;
+	/* 禁止选择 */
+	moz-user-select: -moz-none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.logo {
+	position: absolute;
+	border: #333 solid 1px;
+}
+
+li a {
+	text-decoration: none;
+	color: #000;
+}
+
+#div_abjust {
+	position: absolute;
+	left: 0;
+	top: 0;
+}

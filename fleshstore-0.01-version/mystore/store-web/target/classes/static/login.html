@@ -1,0 +1,162 @@
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+<meta name="renderer" content="webkit" />
+<title>登陆页面</title>
+<!-- css -->
+<!-- 引入bootstrap -->
+<link rel="stylesheet" href="css/bootstrap.css"></link>
+<link rel="stylesheet" href="css/bootstrap.min.css"></link>
+<link rel="stylesheet" href="css/JcBootstrap.css"></link>
+<link rel="stylesheet" href="css/style.css"></link>
+<link rel="icon" href="./favicon.ico" mce_href="./favicon.ico" type="image/x-icon">
+
+<!-- js -->
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/JcBootstrap.js"></script>
+
+
+<!-- 标题图标 -->
+<link rel="icon" href="http://localhost:8082/store/favicon.ico"
+	mce_href="http://localhost:8082/store/favicon.ico" type="image/x-icon">
+</link>
+</head>
+
+<body style="margin: 0;" onresize="resize() ">
+	<div class="Jc_container" style=" height: 90%">
+		<div id="div_log2Back" class="Jc_bg carousel slide"
+			style="position: absolute;width: 100%;margin: 0px;padding: 0px;top: 0px;">
+			<!-- 轮播（Carousel）指标 -->
+			<ol class="carousel-indicators">
+				<li data-target="#div_log2Back" data-slide-to="0" class="active"></li>
+				<li data-target="#div_log2Back" data-slide-to="1"></li>
+				<li data-target="#div_log2Back" data-slide-to="2"></li>
+				<li data-target="#div_log2Back" data-slide-to="3"></li>
+			</ol>
+			<!-- 轮播（Carousel）项目 -->
+			<div class="carousel-inner" style="z-index: -1">
+				<div class="item active">
+					<img height="100%" src="img/freshPicture1.jpg" alt="First slide"></img>
+				</div>
+				<div class="item">
+					<img height="100%" src="img/freshPicture2.jpg" alt="Second slide"></img>
+				</div>
+				<div class="item">
+					<img height="100%" src="img/freshPicture3.jpg" alt="Third slide"></img>
+				</div>
+				<div class="item">
+					<img height="100%" src="img/freshPicture4.jpg" alt="Fourth slide"></img>
+				</div>
+			</div>
+
+		</div>
+
+
+		<div class="Jc_header" style="text-shadow:black 1px 1px 1px">
+			<h1 style="color: #FFF;margin-left: 10px">江东购物商城</h1>
+		</div>
+		<div class="Jc_content">
+			<div style="width: 750px"></div>
+			<div class="Jc_log">
+				<div class="panel panel-info" style="margin: 0px auto;">
+
+					<div style="background-color: #bce8f1;">
+						<ul class="nav nav-tabs">
+							<li style="width: 50%"><a href="#scanLogin"
+								data-toggle="tab">快速登陆</a></li>
+							<li style="width: 50%" class="active"><a
+								href="#accountPasswordLogin" data-toggle="tab">账号密码登录</a>
+							</li>
+						</ul>
+
+					</div>
+					<div class="panel-body">
+						<div class="tab-content">
+							<div class="tab-pane" id="scanLogin" style="height:330px">扫一扫</div>
+							<div class="tab-pane active" id="accountPasswordLogin"
+								style="height:330px">
+								<!-- 登陆功能 -->
+								<form action="loginCl" class="form-login form-autoFocus" method="post">
+									<div class="form-group">
+										<!-- 跳转页面 -->
+										<input type="hidden" name="reView" value="/index"> <font
+											th:text="${log_error}" id="log_font_msg" style="color:red"></font></input><br />
+										<input type="text" name="username"
+											class="form-control input-remenberUsername input-autoFocus"
+											id="name" placeholder="请输入用户名" focus-index="0"></input> <br />
+										<input type="password" name="password"
+											class="form-control input-autoLogin input-autoFocus"
+											id="name" placeholder="请输入密码" focus-index="1"></input> <br />
+
+										<!-- 验证码 -->
+										<input type="text" maxlength="4" name="validatecode"
+											class="form-control input-autoFocus"
+											style="width: 30%;float: left;" placeholder="请输入验证码"
+											focus-index="2"></input><img style="margin-left: 5px"
+											class="img-validatecode" id="img-validatecode"
+											src="aJax_validatecode.do"><a
+											href="javascript:ChangeValidatecode()"
+											id="validatecode_reload" class="regis_a_change_validatecode">看不清,换一张</a>
+
+										<!-- 滑块验证码区 -->
+										<div id="SliderVerificationCodeArea"
+											style="width: 400px;height: 20px"></div> 
+
+										<div style="float: left;">
+											<input type="checkbox" name="remenberUsername"
+												class="checkbox-remenberUsername"></input><label
+												style="margin-left: 5px">记住用户名</label>
+										</div>
+										<div style="float:left;margin-left: 10%;">
+											<input type="checkbox" name="autoLog"
+												class="checkbox-autoLog"></input><label
+												style="margin-left: 5px">自动登陆</label>
+											<!-- 注销取消自动登陆 -->
+											<input type="hidden" name="nolog" value="${noLog}" /></input>
+										</div>
+
+										<br /> <br /> <input type="button" style="width: 100%"
+											class="btn btn-info input-autoFocus input-submit"
+											onclick="log()" value="登录"></input>
+										<!-- 	<input type="submit" style="width: 100%" class="btn btn-info input-autoFocus input-submit" focus-index="3" value="登陆"> -->
+										<br /> <br /> <a>忘记密码?</a><a style="float: right;">立即注册</a>
+									</div>
+								</form>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<footer>
+	<ol class="breadcrumb">
+		<li class="breadcrumb-item">关于我</li>
+		<li class="breadcrumb-item">服务协议</li>
+		<li class="breadcrumb-item">权利声明</li>
+		<li class="breadcrumb-item">版本更新</li>
+		<li class="breadcrumb-item">帮助中心</li>
+		<li class="breadcrumb-item">版权投诉</li>
+
+	</ol>
+</footer>
+</html>
+<script type="text/javascript">
+//滑块验证码 
+path = "http://localhost:9513/store";
+$("#SliderVerificationCodeArea").load("validateBlock.html");
+$.ajax({
+		url : path+"/hasLogin.do",
+		success : function(result) {
+			if (result != 1) {
+				alert("账号已经成功登录!");
+				document.write(result);
+			}
+		}
+	});
+
+ </script>

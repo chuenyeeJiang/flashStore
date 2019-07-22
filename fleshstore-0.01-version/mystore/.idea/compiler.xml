@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="FISCOBCOS" />
+        <module name="store-eureka" />
+        <module name="store-feign-web" />
+        <module name="store-fileServer" />
+        <module name="store-nginx" />
+        <module name="store-security" />
+        <module name="store-server100" />
+        <module name="store-server102" />
+        <module name="store-ssoServer" />
+        <module name="store-userServer" />
+        <module name="store-web" />
+        <module name="weathers" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

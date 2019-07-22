@@ -1,0 +1,43 @@
+.MessageBox{
+	position:relative;
+	margin:80px auto;
+	width:800px;
+	height:500px;
+	background:#F1FFC9;
+}
+.div_img_success{
+	position:absolute;
+	left:100px;
+	top:100px;
+	width:100px;
+	height:100px; 
+}
+.fullimg{
+	width:100%;
+	height:100%;
+}
+.font_message{
+	position:absolute;
+	left:300px;
+	top:150px;
+	color:#0F0;
+	font-size:32px;
+	font-stretch: inherit;
+	text-shadow:#000 1px 1px 2px;
+}
+.font_gotoshow{
+	position:absolute;
+	left:300px;
+	top:290px;
+	color:#CCC;
+	font-size:25px;
+}
+.font_gotonowshow{
+	position:absolute;
+	left:300px;
+	top:320px;
+	font-size:25px;
+}
+.font_gotonow{
+	color:#6F0;
+}

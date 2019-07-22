@@ -1,0 +1,66 @@
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+<meta name="renderer" content="webkit" />
+<title>登陆页面</title>
+<!-- css -->
+<!-- 引入bootstrap -->
+<link rel="stylesheet" href="css/bootstrap.css"></link>
+<link rel="stylesheet" href="css/bootstrap.min.css"></link>
+<link rel="stylesheet" href="css/JcBootstrap.css"></link>
+<link rel="stylesheet" href="css/style.css"></link>
+
+<!-- js -->
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/JcBootstrap.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!-- 标题图标 -->
+<link rel="icon" href="http://localhost:8082/store/favicon.ico"
+	mce_href="http://localhost:8082/store/favicon.ico" type="image/x-icon">
+</link>
+</head>
+<body style="margin: 0" onResize="resize()">
+
+	<div class="Jc_header2" style="text-shadow:black 1px 1px 1px;">
+    <div class="Jc_clearfix">
+		<h1 style="color: #F00;margin-left: 10px; float:left">江东</h1><h3 style="float:left; color:#FFF; padding-top:10px">欢迎注册</h3></div>
+	</div>
+    
+    
+    <div class="Jc_content" style="height:500px">
+    	<form action="Regis.do" class="form-autoFocus" method="post">
+        <div style=" margin: 50px auto 186px;
+    width: 400px">
+		<div class="form-group">
+		<!-- 跳转页面 -->
+		 <input type="hidden" name="reView" value="index"> 
+         <font th:text="${regis_error}" id="regis_font_msg" style="color:red"></font></input><br />
+		 <input type="text" name="regisUsername" class="form-control input-remenberUsername input-autoFocus"
+		  id="name" placeholder="用户名" focus-index="0"></input> <br />
+          <input type="password" name="regisPassword" class="form-control input-remenberUsername input-autoFocus"
+		  id="name" placeholder="密码" focus-index="0"></input> <br />
+           <input type="password"  class="form-control input-remenberUsername input-autoFocus"
+		  id="name" placeholder="确认密码" focus-index="0"></input> <br />
+          <button class="btn btn-danger" style="width:400px">下一步</button>
+         </div>
+        </div>
+        </form>
+    </div>
+    
+    <div class="Jc_footer">
+    	<ol class="breadcrumb" style=" background:#FFF;">
+		 <li>关于我</li>
+		 <li>服务协议</li>
+		 <li>权利声明</li>
+		 <li>版本更新</li>
+		 <li>帮助中心</li>
+		 <li>版权投诉</li>
+        </ol>
+    </div>
+    
+</body>
+</html>
+	

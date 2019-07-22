@@ -1,0 +1,32 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CSS APP天气应用</title>
+    <link type="text/css" href="weather.css"  rel="stylesheet">
+    <script src="js/jquery.ming.js"></script>
+    <script>
+        function getweather(cityname) {
+
+            $.ajax({
+                type: 'post',
+                url: 'WeatherServlet ',
+                data:{cityname:cityname},
+                success:function (weather) {
+                 console.log(weather);
+                }
+            })
+        }
+    </script>
+</head>
+<body>
+ <main>
+     <header></header>
+     <section>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+     </section>
+ </main>
+</body>
+</html>

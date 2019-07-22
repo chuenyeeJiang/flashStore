@@ -1,0 +1,82 @@
+<!--suppress ALL-->
+<html  lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="renderer" content="webkit" />
+<title>登陆页面</title>
+<!-- css -->
+<!-- 引入bootstrap -->
+<link rel="stylesheet" href="webjars/bootstrap/3.3.7/css/bootstrap.css" />
+<link rel="stylesheet" href="webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="css/JcBootstrap.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+
+<!-- js -->
+<script src="webjars/jquery/1.11.1/jquery.js"></script>
+<script src="webjars/bootstrap/3.3.7/js/bootstrap.js"></script>
+<script src="js/function.js"></script>
+<script src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- 标题图标 -->
+<link rel="icon" href="favicon.ico"
+	type="image/x-icon"/>
+</head>
+
+<body style="margin: 0">
+    <div class="panel panel-info" style="margin: 0 auto;">
+	 <!--suppress ALL-->
+	<form action="uploadItem.do" class="form-autoFocus" method="post" enctype="multipart/form-data">
+		<div class="form-group">
+			<!-- 隐藏信息 -->
+
+			<!-- 表单信息 -->
+			<div color="#CCC">*更新信息(可不填)</div>
+			<input type="text" id="updateid" name="updateid" class="form-control input-autoFocus"
+				placeholder="商品号" focus-index="0" onkeyup="updateGongneng()"/> <br />
+
+			<input type="text" name="title" class="form-control input-autoFocus"
+				placeholder="标题" focus-index="1"/> <br />
+			 <input type="text"
+				name="sellPoint" class="form-control input-autoFocus"
+				placeholder="出售地点" focus-index="2"/> <br />
+			 <input type="text" name="price" class="form-control input-autoFocus"
+				placeholder="价格" focus-index="3"/> <br />
+			 <input type="text" name="num" class="form-control input-autoFocus"
+				placeholder="库存量" focus-index="4"/> <br />
+			 <input type="file" name="file" class="form-control input-autoFocus"
+				placeholder="上传图片" focus-index="5"/> <br />
+			<!--suppress ALL-->
+			 <button id="submit" class="btn btn-info">提交</button>
+		</div>
+	</form>
+	</div>
+	 <div class="panel panel-info" style="margin: 0 auto;">
+	<!--suppress ALL-->
+	<form action="deleteItem" class="form-autoFocus" method="post" enctype="multipart/form-data">
+		<div class="form-group">
+			<!-- 隐藏信息 -->
+			<!-- 表单信息 -->
+			<input type="text" id="updateid" name="deleteid" class="form-control input-autoFocus"
+				placeholder="商品号" focus-index="0" onkeyup="updateGongneng()"/> <br />
+			<!--suppress ALL-->
+	    	<button id="submit" class="btn btn-danger">删除</button>
+		</div>
+	</form>
+	</div>
+<script type="text/javascript">
+	var submit = $("#submit");
+   function updateGongneng(){
+   if(submit.val()!=null&&$("#updateid").val()!==""){
+	   submit.text("更新");
+	   submit.addClass("btn-success");
+       submit.removeClass("btn-info");
+   }
+   else{
+       submit.text("提交");
+       submit.removeClass("btn-success");
+       submit.addClass("btn-info");
+   }
+   }
+</script>
+</body>
+</html>
