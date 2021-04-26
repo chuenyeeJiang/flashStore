@@ -8,7 +8,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
      <properties>
-         <io.versionn>1.2</io.versionn>
+         <io.versionn>2.7</io.versionn>
      </properties>
 
     <artifactId>MyTuLing</artifactId>
